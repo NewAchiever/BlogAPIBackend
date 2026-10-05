@@ -1,6 +1,0 @@
-controller:
-    - generate appropriate repsonse for the frontend
-    - path base seperate router by - chintan
-    - jenkins
-    - tests
-    - frontend pages
