@@ -22,7 +22,7 @@ if($method === "POST"){
     $email = $data['email'] ?? null; 
     $password = $data['password'] ?? null;
 
-    $sql = "SELECT id, email, password
+    $sql = "SELECT id, username 
         FROM users
         WHERE email = ? AND password = ?";
 
@@ -55,7 +55,8 @@ if($method === "POST"){
 
         sendResponse(200, [
             "success" => true,
-            "message" => "Successfully logged in."
+            "message" => "Successfully logged in.",
+            "user" => $user
         ]);
         
         

@@ -1,6 +1,6 @@
 <?php
 
-function uploadFile($file){
+function uploadAvatarFile($file){
     
     $allowedTypes = [
         'image/jpeg' => 'jpg',

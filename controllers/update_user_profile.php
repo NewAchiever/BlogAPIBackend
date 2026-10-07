@@ -35,7 +35,7 @@ if($method === "POST"){
 
     if (isset($_FILES['profile_pic'])) {    
         $file = $_FILES['profile_pic'];
-        $filePath = uploadFile($file);
+        $filePath = uploadAvatarFile($file);
         $fields[] = "profile_pic = ?";
         $values[] = $filePath;
         $types .= "s";
